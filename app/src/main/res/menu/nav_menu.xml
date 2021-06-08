@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myReservationFragment2"
+        android:icon="@drawable/ic_home"
+        android:title="@string/tv_cubipool"/>
+
+    <item
+        android:id="@+id/searchHomeFragment2"
+        android:icon="@drawable/ic_search"
+        android:title="@string/tv_cubipool"/>
+
+    <item
+        android:id="@+id/joinGroupFragment2"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/tv_cubipool"/>
+</menu>

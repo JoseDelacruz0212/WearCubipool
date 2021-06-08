@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/myReservationFragment2">
+
+    <fragment
+        android:id="@+id/myReservationFragment2"
+        android:name="pe.edu.upc.myapplication.ui.reservation.MyReservationFragment"
+        android:label="fragment_my_reservation"
+        tools:layout="@layout/fragment_my_reservation" >
+        <action
+            android:id="@+id/action_myReservationFragment2_to_my_reservation_nav_graph"
+            app:destination="@id/myReservationActivity">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/searchHomeFragment2"
+        android:name="pe.edu.upc.myapplication.ui.search.SearchHomeFragment"
+        android:label="fragment_search_home"
+        tools:layout="@layout/fragment_search_home" >
+        <action
+            android:id="@+id/action_searchHomeFragment2_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="pe.edu.upc.myapplication.ui.SearchActivity"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
+    <fragment
+        android:id="@+id/joinGroupFragment2"
+        android:name="pe.edu.upc.myapplication.ui.join.JoinGroupFragment"
+        android:label="fragment_join_group"
+        tools:layout="@layout/fragment_join_group" />
+    <activity
+        android:id="@+id/myReservationActivity"
+        android:name="pe.edu.upc.myapplication.ui.MyReservationActivity"
+        android:label="activity_my_reservation"
+        tools:layout="@layout/activity_my_reservation" />
+</navigation>

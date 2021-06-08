@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_nav_graph"
+    app:startDestination="@id/searchCubicleFragment">
+
+    <fragment
+        android:id="@+id/searchCubicleFragment"
+        android:name="pe.edu.upc.myapplication.ui.search.SearchCubicleFragment"
+        android:label="fragment_search_cubicle"
+        tools:layout="@layout/fragment_search_cubicle" >
+        <action
+            android:id="@+id/action_searchCubicleFragment_to_cubicleAvailablesFragment"
+            app:destination="@id/cubicleAvailablesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cubicleAvailablesFragment"
+        android:name="pe.edu.upc.myapplication.ui.search.CubicleAvailablesFragment"
+        android:label="fragment_cubicle_availables"
+        tools:layout="@layout/fragment_cubicle_availables" >
+        <argument
+            android:name="cublicleF"
+            app:argType="pe.edu.upc.myapplication.data.entities.CubicleF" />
+        <action
+            android:id="@+id/action_cubicleAvailablesFragment_to_reservationSuccessFragment"
+            app:destination="@id/reservationSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservationSuccessFragment"
+        android:name="pe.edu.upc.myapplication.ui.search.ReservationSuccessFragment"
+        android:label="fragment_reservation_sucess"
+        tools:layout="@layout/fragment_reservation_sucess" >
+        <action
+            android:id="@+id/action_reservationSuccessFragment_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity2"
+        android:name="pe.edu.upc.myapplication.ui.HomeActivity"
+        android:label="HomeActivity"
+        tools:layout="@layout/activity_home"/>
+</navigation>
