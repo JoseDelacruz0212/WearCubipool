@@ -1,1 +1,1 @@
-# WearCubipool v1.0
+# WearCubipool
