@@ -58,7 +58,7 @@
 
             <ImageButton
                 android:id="@+id/cubicles"
-
+                android:onClick="GoCubicle"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:adjustViewBounds="false"

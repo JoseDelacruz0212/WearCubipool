@@ -23,7 +23,10 @@ class MainActivity : Activity() {
         val intent=Intent(this,CurvedActivity::class.java)
         startActivity(intent)
     }
-
+    fun GoCubicle(view: View){
+        val intent=Intent(this,CurvedCubicleActivity::class.java)
+        startActivity(intent)
+    }
 
 
 

@@ -27,7 +27,8 @@
         <activity android:name=".ReservaActivity"></activity>
         <activity android:name=".CurvedActivity">
         </activity>
-
+        <activity android:name=".CurvedCubicleActivity"></activity>
+        <activity android:name=".CubicleActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
